@@ -7,12 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/1ZMI9Q3gzH3dlbqcflOAXaHasJf9THrF8
 """
 
+!pip install streamlit
+
 import streamlit as st
 import pandas as pd
 import joblib
 
 # Load the trained model
-model = joblib.load("/house_price_model.pkl")
+model = joblib.load("/content/house_price_model.pkl")
+
 
 st.title(" House Price Prediction App")
 
